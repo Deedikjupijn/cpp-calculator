@@ -1,8 +1,12 @@
 #include <iostream>
+#include <chrono>
+#include <thread>
 using namespace std;
 
 int main(){
-    cout << "Hello World!\n" << endl;
+    using namespace std::this_thread;     // sleep_for, sleep_until
+    using namespace std::chrono_literals; // ns, us, ms, s, h, etc.
+    cout << "Hello random person" << endl;
     cout << "what do you want to do? Your options are + - and x: ";
     char x;
     cin >> x;
@@ -24,7 +28,18 @@ int main(){
             cout << "The awnser with the sum is: " << a << " and " << b << " is " << a * b << endl;
         }
     }
+    cout << "Type Y to put in another sum or N to close the program: ";
+    char o;
+    cin >> o;
+    if (o == 'Y' || o == 'y'){
+        main();
+    }
+    else if (o == 'N' || o == 'n'){
+        cout << "Goodbye!\n" << endl;
+        sleep_for(2s);
+    }
     else{
-        cout << "That is no valid option, the program will be closed now\n" << endl;
+        cout << "\nYou did not type in a valid option. Goodbye!" << endl;
+        sleep_for(2s);
     }
 }
