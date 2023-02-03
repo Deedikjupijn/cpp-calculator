@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     using namespace std::this_thread;     // sleep_for, sleep_until
     using namespace std::chrono_literals; // ns, us, ms, s, h, etc.
-    cout << "Hello random person" << endl;
+    cout << "Hi random person" << endl;
     cout << "what do you want to do? Your options are + - and x: ";
     char x;
     cin >> x;
