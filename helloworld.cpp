@@ -1,14 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    cout << "Hello word! \n";
-    cout << "random tekst go brrr \n";
-    cout << "even more random tekst \n";
-    int x;
-    cout << "type a random number: ";
+int main(){
+    cout << "Hello World!\n" << endl;
+    cout << "what do you want to do? Your options are + - and x: ";
+    char x;
     cin >> x;
-    cout << "your number is: " << x;
-    return 0;
+    if (x == '+'){
+        cout << "you chose +\n" << endl;
+    }
+    else if (x == '-'){
+        cout << "you chose -\n" << endl;
+    }
+    else if (x == 'x'){
+        cout << "you chose x\n" << endl;
+    }
+    else{
+        cout << "That is no valid option\n" << endl;
+    }
 }
