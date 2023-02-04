@@ -16,7 +16,7 @@ int main(){
         int a;
         cin >> a;
         cout << "Type in the second number: ";
-        int b;
+        int b; 
         cin >> b;    
         if (x == "+"){
             cout << "The sum of " << a << " and " << b << " is " << a + b << endl;
@@ -35,11 +35,11 @@ int main(){
         main();
     }
     else if (o == "N" || o == "n"){
-        cout << "Goodbye!\n" << endl;
+        cout << "Goodbye! The program will shut itself down.\n" << endl;
         sleep_for(2s);
     }
     else{
-        cout << "\nYou did not type in a valid option. Goodbye!" << endl;
+        cout << "\nYou did not type in a valid option. The program will shut itself down, Goodbye!" << endl;
         sleep_for(4s);
     }
 }
