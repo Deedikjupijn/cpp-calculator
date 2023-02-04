@@ -28,20 +28,18 @@ int main(){
             cout << "The awnser with the sum is: " << a << " and " << b << " is " << a * b << endl;
         }
     }
-    else {
-        cout << "Type Y to put in another sum or N to close the program: ";
-        string o;
-        cin >> o;
-        if (o == "Y" || o == "y"){
-            main();
-        }
-        else if (o == "N" || o == "n"){
-            cout << "Goodbye!\n" << endl;
-            sleep_for(2s);
-        }
-        else{
-            cout << "\nYou did not type in a valid option. Goodbye!" << endl;
-            sleep_for(4s);
-        }
+    cout << "Type Y to put in another sum or N to close the program: ";
+    string o;
+    cin >> o;
+    if (o == "Y" || o == "y"){
+        main();
+    }
+    else if (o == "N" || o == "n"){
+        cout << "Goodbye!\n" << endl;
+        sleep_for(2s);
+    }
+    else{
+        cout << "\nYou did not type in a valid option. Goodbye!" << endl;
+        sleep_for(4s);
     }
 }
